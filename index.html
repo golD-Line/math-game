@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link href="https://fonts.googleapis.com/css?family=Poppins&display=swap" rel="stylesheet">
+    <link href="./style.css" rel="stylesheet">
+</head>
+
+<body>
+    <!---------------------------------------------START WEB PAGE--------------------------------------------->
+    <div class="my-body">
+        <div class="start" id="start">
+
+            <label for="name">Enter Your Name:</label>
+            <input class="start" type="text" maxlength="18" id="name" required autocomplete="on" value="" />
+
+            <div class="welcome box" id="wBox">
+                <div class="start">
+                    <button id="hardButton" name="drone">
+                        <label for="hardButton"><span>12 or over *HARD*</span></label>
+                        <button id="easyButton" name="drone">
+                            <label for="easyButton">Under 12 years old </label>
+                        </button>
+                    </button>
+
+                    <div class="start">
+                        <label for="age" id="age-label">Please enter your age:
+                            <input class="ageBox start" id="age" type="number" max="12" min="0">
+                        </label>
+                    </div>
+                </div>
+            </div>
+
+            <button class="button" onclick="startCount()">Start Game!</button>
+        </div>
+
+        <div class="hide" id="game">
+
+            <div class="welcome start" id="numbox">
+                <span class="no one box" id="no1">2</span>
+                <span class="box">+</span>
+                <span class="no two box" id="no2">3</span>
+                <span class="box">=</span>
+                <span><input type="number" maxlength="2" id="answer" required value="" class="box start" min="0"
+                        max="10" onkeypress="handle(event)" /></span>
+            </div>
+
+            <div class="box start">
+                <button class="submition" onclick="myEnter()">Submit</button>
+            </div>
+        </div>
+
+        <div class="score box">
+            <span class="box" id="score"></span>
+            <span class="hide box" id="txt"></span>
+        </div>
+
+        <div id="game-over">
+            <div id="table-div"></div>
+        </div>
+
+        <br>
+
+        <div>
+            <button class="hide" id="reset" onclick="_reset()">Stop Game!</button>
+        </div>
+        <!-------------------------------------------------END HTML------------------------------------------------->
+    </div>
+
+    <script src="./main.js">
+        //-------------------------------------------------start js-------------------------------------------------//
+
+    </script>
+
+</body>
+
+</html>
