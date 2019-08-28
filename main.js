@@ -19,7 +19,6 @@ let resetButton = document.getElementById('reset');
 let ageLabel = document.getElementById('age-label');
 let gameOver = document.getElementById('game-over');
 let myTableDiv = document.getElementById("table-div");
-let allowedPlayers = ["darcy", "harrison", "tom", "jennifer"]
 let reset = [
     { player: 'TOM', value: 11 },
     { player: 'IS', value: 10 },
