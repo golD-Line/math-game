@@ -1,5 +1,5 @@
 let c, t, answer;
-let cTime = 7;
+let cTime = 30;
 let timer_is_on = 0, scored = 0;
 let maxNum = 12;
 let itemsArray = localStorage.getItem('items') ? JSON.parse(localStorage.getItem('items')) : [];
@@ -24,11 +24,11 @@ let reset = [
     { player: 'IS', value: 10 },
     { player: 'THE', value: 9 },
     { player: 'BEST', value: 8 },
-    { player: 'harrison', value: 7 },
-    { player: 'Jennifer', value: 6 },
-    { player: 'harrison', value: 5 },
-    { player: 'darcy', value: 4 },
-    { player: 'harrison', value: 3 },
+    { player: 'Lovecraft', value: 7 },
+    { player: 'Scott Green', value: 6 },
+    { player: 'cnut', value: 5 },
+    { player: 'forest', value: 4 },
+    { player: 'jenny', value: 3 },
     { player: 'tom', value: 1 }
 ];
 score.innerHTML = "Score: 0"
